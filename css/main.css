@@ -5,11 +5,26 @@ box-sizing: border-box;
 
 }
 body{
-  height: 5000px;
-  
+  background-color: black;
+}
+header{
+  background-color: rgb(0, 0, 0);
+  height: 100vh;
+
+}
+footer{
+  background-image: url('../imgs/out.jpg');
+  height: 500px;
+  background-repeat: no-repeat;
+background-size: 100%;
+display:flex;
+justify-content: space-evenly;
+flex-direction: row-reverse;
+font-family: cairo;
 }
 a {
     text-decoration: none;
+    
   }
 .list ul {
     display: flex;
@@ -42,24 +57,118 @@ background-color: black;
     border-bottom-color:yellow ;
     border-bottom-style:solid ;
   }
-header{
-    background-color: rgb(0, 0, 0);
-    height: 100vh;
-  
-}
+
 .container {
   width: 80%;
   margin: auto;
 }
 .above-all-burgers{
-  margin-top: 300px;height: 100%; width: 50%;
+  margin-top: 300px;
+  height: 100%;
+   width: 50%;
   
   }
-.imgs{
+.headerimg{
   display: flex;
 
 }
 .ebra{
-   width: 63.8%;
+   width: 62%;
+   height: 30%;
 
+}
+.welcoming{
+ display:flex;
+ flex-direction: row-reverse;
+ justify-content: center;
+color: white;
+ margin-top: 90px;
+ font-family: cairo;
+}
+.words{
+  text-align: right;
+width: 500px;
+font-size: x-large;
+margin-top: 100px;
+}
+.adress{
+  font-size:50px;
+margin-bottom: 20px;
+border-bottom-color:yellow ;
+border-bottom-style:solid ;
+border-bottom-width: 10px;
+}
+.adressexplainp{
+font-size: larger;
+}
+.burgerguy{
+ width: 80%;
+  height: 100%;
+animation-name: moveUpDown;
+animation-duration: 4s;
+animation-iteration-count: infinite;
+box-shadow:-20px 30px yellow ;
+}
+
+.vision{
+  display:flex;
+  justify-content: center;
+ color: white;
+  margin-top: 90px;
+  font-family: cairo;
+ }
+ .twoburgerguy{
+  width: 120%;
+   height: 120%;
+ animation-name: rightandleft;
+ animation-duration: 5s;
+ animation-iteration-count: infinite;
+margin-top: -180px;
+ }
+ .visionwords{
+  text-align: left;
+  width: 500px;
+  font-size: x-large;
+  margin-top: 100px;
+ }
+ .footerlist {
+  text-align: right;
+background-color: black;
+
+}
+.footerlist ul a {
+  opacity: 1;
+  color:rgb(190, 190, 131);
+  font-size: larger;
+}
+.footerlist li{
+  margin-bottom: 30px;
+
+  
+}
+.footerlist ul{
+  padding-top: 40px;
+  list-style-type: none;
+gap: 50px;
+  
+}
+.footerlogo{
+  height: 100px;
+}
+
+ @keyframes moveUpDown {
+  0%, 100% {
+      transform: translateY(0);
+  }
+  50% {
+      transform: translateY(20px); /* Adjust the value to control the movement distance */
+  }
+}
+ @keyframes rightandleft {
+  0%, 100% {
+      transform: translateX(0);
+  }
+  50% {
+      transform: translateX(60px); /* Adjust the value to control the movement distance */
+  }
 }
