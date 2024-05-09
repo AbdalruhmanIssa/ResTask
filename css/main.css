@@ -6,6 +6,7 @@ box-sizing: border-box;
 }
 body{
   background-color: black;
+  user-select: none;
 }
 header{
   background-color: rgb(0, 0, 0);
@@ -13,14 +14,16 @@ header{
 
 }
 footer{
-  background-image: url('../imgs/out.jpg');
-  height: 500px;
+  background-image: url('../imgs/out.jpg') ;
+  height: 600px;
   background-repeat: no-repeat;
 background-size: 100%;
 display:flex;
-justify-content: space-evenly;
-flex-direction: row-reverse;
-font-family: cairo;
+flex-direction: column;
+justify-content: center;
+align-items: center;
+font-family:'Courier New', Courier, monospace;
+
 }
 a {
     text-decoration: none;
@@ -133,29 +136,57 @@ margin-top: -180px;
  }
  .footerlist {
   text-align: right;
-background-color: black;
 
 }
 .footerlist ul a {
-  opacity: 1;
-  color:rgb(190, 190, 131);
+  
+  color:gold;
   font-size: larger;
+  text-shadow: 50px;
+  
+ 
+
 }
 .footerlist li{
   margin-bottom: 30px;
 
-  
+ 
 }
 .footerlist ul{
   padding-top: 40px;
   list-style-type: none;
 gap: 50px;
-  
+display: flex;
+flex-direction: row;
 }
 .footerlogo{
   height: 100px;
+box-shadow: 0 0 10px 10px rgb(250, 218, 7);
 }
-
+.facebook{
+  height: 50px;
+  transform: translateY(0);
+  transition-duration: 2s;
+}
+.instagram{
+  height: 50px;
+  transform: translateY(0);
+  transition-duration: 2s;
+}
+.findushere{
+  margin-top: 50px;
+  color: white;
+  text-transform:uppercase ;
+}
+.instagram:hover{
+  transform: translateY(-10px);
+  cursor: pointer;
+}
+.facebook:hover{
+  transform: translateY(-10px);
+ 
+  cursor: pointer;
+}
  @keyframes moveUpDown {
   0%, 100% {
       transform: translateY(0);
