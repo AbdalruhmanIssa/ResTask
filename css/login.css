@@ -1,0 +1,144 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+form {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  align-content: center;
+  color: white;
+  background-image: url(../BackgroundImage/mimiburgers.webp);
+  height: 100vh;
+}
+input {
+  margin-top: 30px;
+  height: 30px;
+  width: 200px;
+  background-color: white;
+  color: black;
+  border: none;
+  font-family: cairo;
+}
+button {
+  margin-top: 30px;
+  background-color: white;
+  height: 50px;
+  width: 200px;
+  border: 0px;
+  font-size: xx-large;
+  border: none;
+  padding: 10px 20px;
+  font-size: 16px;
+  border-radius: 10px;
+  cursor: pointer;
+}
+a {
+  text-decoration: none;
+  color: black;
+}
+h1 {
+  font-family: cairo;
+  border-bottom-color: yellow;
+  border-bottom-style: solid;
+  border-bottom-width: 5px;
+  color: white;
+  font-size: 40px;
+}
+footer {
+  background-image: url("../imgs/out.jpg");
+  height: 618px;
+  background-repeat: no-repeat;
+  background-size: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  font-family: "Courier New", Courier, monospace;
+}
+.navbar {
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  position: sticky;
+  top: 0;
+  background-color: black;
+  height: 80px;
+  z-index: 1;
+}
+.list ul {
+  display: flex;
+  list-style-type: none;
+  gap: 30px;
+}
+.navbar img {
+  height: 70px;
+  display: flex;
+  align-items: end;
+}
+.list ul a {
+  color: white;
+  font-size: large;
+  font-family: Cairo;
+}
+.list ul a:hover {
+  color: yellow;
+  border-bottom-color: yellow;
+  border-bottom-style: solid;
+}
+.footerlist {
+  text-align: right;
+}
+.footerlist li {
+  margin-bottom: 30px;
+}
+.footerlist ul {
+  padding-top: 40px;
+  list-style-type: none;
+  gap: 50px;
+  display: flex;
+  flex-direction: row;
+}
+.footerlist ul a {
+  color: gold;
+  font-size: larger;
+  text-shadow: 50px;
+}
+.footerlogo {
+  height: 100px;
+  box-shadow: 0 0 10px 10px rgb(250, 218, 7);
+}
+.facebook {
+  height: 50px;
+  transform: translateY(0);
+  transition-duration: 2s;
+}
+.instagram {
+  height: 50px;
+  transform: translateY(0);
+  transition-duration: 2s;
+}
+.findushere {
+  margin-top: 50px;
+  color: white;
+  text-transform: uppercase;
+}
+.instagram:hover {
+  transform: translateY(-10px);
+  cursor: pointer;
+}
+.facebook:hover {
+  transform: translateY(-10px);
+  cursor: pointer;
+}
+@keyframes moveUpDown {
+  0%,
+  100% {
+    transform: translateY(0);
+  }
+  50% {
+    transform: translateY(20px);
+  }
+}

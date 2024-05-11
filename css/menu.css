@@ -1,0 +1,93 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: 0;
+}
+body{
+  background-color:rgb(255, 227, 92) ;
+}
+header{
+  margin:300px;
+background-position: center;
+display: flex;
+  justify-content: center;
+  align-items: center;
+}
+section{
+  display: flex;
+  justify-content: center;
+flex-direction: column;
+align-items: center;
+align-content: center;
+}
+a {
+    text-decoration: none;
+  }
+  .container {
+    width: 80%;
+    margin: auto;
+  }
+.navbar {
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  position: sticky;
+  top: 0;
+  background-color: black;
+  height: 80px;
+  z-index: 1;
+}
+.list ul {
+  display: flex;
+  list-style-type: none;
+  gap: 30px;
+}
+.navbar img {
+  height: 70px;
+  display: flex;
+  align-items: end;
+}
+.list ul a {
+  color: white;
+  font-size: large;
+  font-family: Cairo;
+}
+.list ul a:hover {
+  color: yellow;
+  border-bottom-color: yellow;
+  border-bottom-style: solid;
+}
+.menucard{
+  font-size: 100px;
+  color: white;
+  font-family: cairo;
+  border-bottom-color:yellow ;
+  border-bottom-width: 10px;
+  border-bottom-style: solid;
+
+}
+.soso{
+  animation-name: disappearToAppear;
+  animation-duration: 2s;
+  animation-play-state:running; 
+  
+}
+
+.soso:hover{
+ 
+
+}
+/* Keyframes for disappear to appear effect */
+@keyframes disappearToAppear {
+  0% { opacity: 0; }
+
+  100%{opacity: 1;}
+}
+
+/* Applying the animation to an element */
+.element {
+  width: 100px;
+  height: 100px;
+  background-color: #3498db;
+  animation: disappearToAppear 2s infinite;
+}
