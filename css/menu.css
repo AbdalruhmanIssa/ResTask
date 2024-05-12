@@ -1,32 +1,31 @@
-*{
-    margin: 0;
-    padding: 0;
-    box-sizing: 0;
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: 0;
 }
-body{
-  background-color:rgb(255, 227, 92) ;
+body {
+  background-image: url(../BackgroundImage/miniburger.jpg);
+  background-size: 181px;
+  background-position-y: 118.1px;
 }
-header{
-  margin:300px;
-background-position: center;
-display: flex;
+header {
+  margin: 300px;
+  background-position: center;
+  display: flex;
   justify-content: center;
   align-items: center;
 }
-section{
+section {
   display: flex;
   justify-content: center;
-flex-direction: column;
-align-items: center;
-align-content: center;
+  flex-direction: column;
+  align-items: center;
+  align-content: center;
 }
 a {
-    text-decoration: none;
-  }
-  .container {
-    width: 80%;
-    margin: auto;
-  }
+  text-decoration: none;
+}
+
 .navbar {
   display: flex;
   justify-content: space-evenly;
@@ -57,37 +56,110 @@ a {
   border-bottom-color: yellow;
   border-bottom-style: solid;
 }
-.menucard{
+.menucard {
   font-size: 100px;
   color: white;
   font-family: cairo;
-  border-bottom-color:yellow ;
+  border-bottom-color: yellow;
   border-bottom-width: 10px;
   border-bottom-style: solid;
-
 }
-.soso{
-  animation-name: disappearToAppear;
-  animation-duration: 2s;
-  animation-play-state:running; 
-  
+.soso {
+  display: flex;
+  height: 100vh;
 }
-
-.soso:hover{
- 
-
+footer {
+  background-image: url("../imgs/out.jpg");
+  height: 618px;
+  background-repeat: no-repeat;
+  background-size: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  font-family: "Courier New", Courier, monospace;
 }
-/* Keyframes for disappear to appear effect */
-@keyframes disappearToAppear {
-  0% { opacity: 0; }
-
-  100%{opacity: 1;}
+.navbar {
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  position: sticky;
+  top: 0;
+  background-color: black;
+  height: 80px;
+  z-index: 1;
 }
-
-/* Applying the animation to an element */
-.element {
-  width: 100px;
+.list ul {
+  display: flex;
+  list-style-type: none;
+  gap: 30px;
+}
+.navbar img {
+  height: 70px;
+  display: flex;
+  align-items: end;
+}
+.list ul a {
+  color: white;
+  font-size: large;
+  font-family: Cairo;
+}
+.list ul a:hover {
+  color: yellow;
+  border-bottom-color: yellow;
+  border-bottom-style: solid;
+}
+.footerlist {
+  text-align: right;
+}
+.footerlist li {
+  margin-bottom: 30px;
+}
+.footerlist ul {
+  padding-top: 40px;
+  list-style-type: none;
+  gap: 50px;
+  display: flex;
+  flex-direction: row;
+}
+.footerlist ul a {
+  color: gold;
+  font-size: larger;
+  text-shadow: 50px;
+}
+.footerlogo {
   height: 100px;
-  background-color: #3498db;
-  animation: disappearToAppear 2s infinite;
+  box-shadow: 0 0 10px 10px rgb(250, 218, 7);
+}
+.facebook {
+  height: 50px;
+  transform: translateY(0);
+  transition-duration: 2s;
+}
+.instagram {
+  height: 50px;
+  transform: translateY(0);
+  transition-duration: 2s;
+}
+.findushere {
+  margin-top: 50px;
+  color: white;
+  text-transform: uppercase;
+}
+.instagram:hover {
+  transform: translateY(-10px);
+  cursor: pointer;
+}
+.facebook:hover {
+  transform: translateY(-10px);
+  cursor: pointer;
+}
+@keyframes moveUpDown {
+  0%,
+  100% {
+    transform: translateY(0);
+  }
+  50% {
+    transform: translateY(20px);
+  }
 }
